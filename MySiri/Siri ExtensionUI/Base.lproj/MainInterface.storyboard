@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ObA-dk-sSI">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Futura.ttc">
+            <string>Futura-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Intent View Controller-->
+        <scene sceneID="7MM-of-jgj">
+            <objects>
+                <viewController id="ObA-dk-sSI" customClass="IntentViewController" customModule="Siri_ExtensionUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qkL-Od-lgU"/>
+                        <viewControllerLayoutGuide type="bottom" id="n38-gi-rB5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zMn-AG-sqS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="150"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X47-rx-isc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="361.60000000000002" y="108.84557721139431"/>
+        </scene>
+        <!--Message View Controller-->
+        <scene sceneID="lsc-Mf-CQ8">
+            <objects>
+                <viewController storyboardIdentifier="MessageViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rr0-Ku-f3h" customClass="MessageViewController" customModule="Siri_ExtensionUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="blT-Nm-0b5"/>
+                        <viewControllerLayoutGuide type="bottom" id="obf-FV-VHI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1MT-Lv-h3g">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cBy-Af-PuE">
+                                <rect key="frame" x="15" y="64" width="290" height="23"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <color key="textColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.26274509800000001" green="0.68235294120000001" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cBy-Af-PuE" firstAttribute="leading" secondItem="1MT-Lv-h3g" secondAttribute="leading" constant="15" id="Eno-Kh-JlL"/>
+                            <constraint firstItem="cBy-Af-PuE" firstAttribute="centerX" secondItem="1MT-Lv-h3g" secondAttribute="centerX" id="Rj9-VD-PdV"/>
+                            <constraint firstItem="cBy-Af-PuE" firstAttribute="centerY" secondItem="1MT-Lv-h3g" secondAttribute="centerY" id="hRN-zW-pDl"/>
+                            <constraint firstAttribute="trailing" secondItem="cBy-Af-PuE" secondAttribute="trailing" constant="15" id="rIy-kU-hCg"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="320" height="150"/>
+                    <connections>
+                        <outlet property="contentLabel" destination="cBy-Af-PuE" id="3g2-aq-fJx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yfF-CV-vgr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="362" y="309"/>
+        </scene>
+        <!--Recipient View Controller-->
+        <scene sceneID="lMB-eh-7ja">
+            <objects>
+                <viewController storyboardIdentifier="RecipientViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aB6-6t-Dg3" customClass="RecipientViewController" customModule="Siri_ExtensionUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VmQ-gC-DWB"/>
+                        <viewControllerLayoutGuide type="bottom" id="F9T-Ct-MZo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gLy-wm-Lop">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YVf-5D-wjW">
+                                <rect key="frame" x="15" y="64" width="290" height="23"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <color key="textColor" red="0.26274509800000001" green="0.68235294120000001" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YVf-5D-wjW" firstAttribute="centerX" secondItem="gLy-wm-Lop" secondAttribute="centerX" id="aty-rl-o5m"/>
+                            <constraint firstAttribute="trailing" secondItem="YVf-5D-wjW" secondAttribute="trailing" constant="15" id="hat-Ov-K3m"/>
+                            <constraint firstItem="YVf-5D-wjW" firstAttribute="centerY" secondItem="gLy-wm-Lop" secondAttribute="centerY" id="kcR-pD-yDV"/>
+                            <constraint firstItem="YVf-5D-wjW" firstAttribute="leading" secondItem="gLy-wm-Lop" secondAttribute="leading" constant="15" id="vi8-6Q-Va3"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="320" height="150"/>
+                    <connections>
+                        <outlet property="contentLabel" destination="YVf-5D-wjW" id="t0B-jm-L8i"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SLj-ff-Nh5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="362" y="503"/>
+        </scene>
+    </scenes>
+</document>
